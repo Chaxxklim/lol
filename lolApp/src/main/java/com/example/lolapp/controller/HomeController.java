@@ -86,7 +86,7 @@ public class HomeController {
                 String replace2 = replace1.replace("]", "");
                 String finalReplace = replace2.replace("\"", "");
                 String[] split = finalReplace.split(",");
-
+                //매치리스트 오늘안에 가능하냐
                 matchList = Arrays.asList(split);
 
                 for (String str : matchList) {
