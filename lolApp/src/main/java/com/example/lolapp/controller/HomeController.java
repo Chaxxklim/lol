@@ -5,7 +5,6 @@ import com.example.lolapp.vo.SummonerVO;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.ResponseHandler;
@@ -31,13 +30,13 @@ public class HomeController {
     @RequestMapping("/index")
     public String index(){
 
-        return "webapp/views/index";
+        return "index";
     }
 
     @RequestMapping("/test")
     public String test(){
 
-        return "webapp/views/test";
+        return "views/test";
     }
 
     @GetMapping("/search")
@@ -117,6 +116,6 @@ public class HomeController {
         }
 
         System.out.println(matchVOList);
-        return "webapp/views/searchResult";
+        return "views/searchResult";
     }
 }
